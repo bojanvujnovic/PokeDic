@@ -51,6 +51,10 @@ class PokemonDetailVC: UIViewController {
         self.typeLabel.text = pokemon.type
         self.descriptionLabel.text = pokemon.description
         self.evolutionLabel.text = pokemon.nextEvolutionText
+        if let evolutionImage = pokemon.evolutionImage {
+            self.nextEvoImage.isHidden = false
+            self.nextEvoImage.image = evolutionImage }
+        else { self.nextEvoImage.isHidden = true }
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {

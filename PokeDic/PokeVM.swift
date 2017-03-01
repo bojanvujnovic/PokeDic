@@ -19,6 +19,12 @@ class PokeVM {
         else {    return nil       }
     }
     
+    var evolutionImage: UIImage? {
+        if let pokeImage = UIImage(named: "\(evolutionID)") {
+            return pokeImage }
+        else {    return nil       }
+    }
+    
     var name: String {
         get {
             return pokemon.name.capitalized }
@@ -76,7 +82,10 @@ class PokeVM {
     
     var nextEvolutionText: String {
         get {
-            return  pokemon.nextEvolutionText}
+            if evolutionID == "" {
+               return "No Evolution"
+            } else {
+                return  pokemon.nextEvolutionText } }
         set {
             pokemon.nextEvolutionText = newValue
         }
@@ -140,7 +149,7 @@ class PokeVM {
                 //Evolution
                 if let evolutions = dict[PokeDict.evolutions] as? [Dictionary<String, AnyObject>], evolutions.count > 0 {
                       let evolution = evolutions[0]
-                      self.nextEvolutionText = "Next Evolution to: "
+                      self.nextEvolutionText = "Next Evolution: "
                       if let evolutionName = evolution[PokeDict.to] as? String {
                             //If not contains "mega"
                             if evolutionName.range(of: "mega") == nil {
@@ -151,9 +160,11 @@ class PokeVM {
                                     self.evolutionID = changedUri
                                     if let evolutionLevel = evolution[PokeDict.level] as? Int {
                                          self.evolutionLevel = "\(evolutionLevel)"
+                                        
                                     } else {
                                         self.evolutionLevel = ""
                                     }
+                                    self.nextEvolutionText += "\(self.evolutionName) - LVL \(self.evolutionLevel)"
                                 }
                             }
                       }

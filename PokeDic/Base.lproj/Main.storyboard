@@ -198,11 +198,11 @@
                                     <constraint firstAttribute="height" constant="65" id="v96-5k-55b"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tYT-oq-fNu" userLabel="BioStack">
-                                <rect key="frame" x="16" y="73" width="288" height="258"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tYT-oq-fNu" userLabel="BioStack">
+                                <rect key="frame" x="16" y="73" width="288" height="290"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="ocl-Df-jfQ" userLabel="SearchImageStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="159"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ocl-Df-jfQ" userLabel="SearchImageStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="172"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VHG-TK-BlH">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="29"/>
@@ -216,7 +216,7 @@
                                                 <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                             </segmentedControl>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BeM-7U-6zV" userLabel="ImgLabel Stack">
-                                                <rect key="frame" x="0.0" y="39" width="288" height="120"/>
+                                                <rect key="frame" x="0.0" y="52" width="288" height="120"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="aya-ed-KKa">
                                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -251,8 +251,8 @@
                                             <constraint firstAttribute="trailing" secondItem="VHG-TK-BlH" secondAttribute="trailing" id="y8L-4u-OQu"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-rf-Ltg" userLabel="TypeHeightWeightStack">
-                                        <rect key="frame" x="0.0" y="169" width="288" height="89"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-rf-Ltg" userLabel="TypeHeightWeightStack">
+                                        <rect key="frame" x="0.0" y="192" width="288" height="98"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6H-ft-agp" userLabel="TypeDefenseStack">
                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
@@ -308,8 +308,8 @@
                                                     <constraint firstAttribute="height" constant="20" id="O1N-Yp-qgg"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tz7-xm-O5u" userLabel="HeightWeightStack">
-                                                <rect key="frame" x="0.0" y="35" width="288" height="54"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tz7-xm-O5u" userLabel="HeightWeightStack">
+                                                <rect key="frame" x="0.0" y="39" width="288" height="59"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="wP2-dq-joV" userLabel="HeightIDStack">
                                                         <rect key="frame" x="0.0" y="0.0" width="288" height="19"/>
@@ -369,7 +369,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="7BD-tD-b0m" userLabel="WeightBaseStack">
-                                                        <rect key="frame" x="0.0" y="34" width="288" height="20"/>
+                                                        <rect key="frame" x="0.0" y="39" width="288" height="20"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YVJ-NV-81K" userLabel="WeightStack">
                                                                 <rect key="frame" x="0.0" y="0.0" width="114" height="20"/>
@@ -439,14 +439,13 @@
                                             <constraint firstAttribute="trailing" secondItem="tz7-xm-O5u" secondAttribute="trailing" id="dL1-sN-nTi"/>
                                             <constraint firstItem="i6H-ft-agp" firstAttribute="leading" secondItem="ViE-rf-Ltg" secondAttribute="leading" id="jnd-v4-zSQ"/>
                                             <constraint firstItem="i6H-ft-agp" firstAttribute="top" secondItem="ViE-rf-Ltg" secondAttribute="top" id="xFJ-rT-ApD"/>
-                                            <constraint firstItem="tz7-xm-O5u" firstAttribute="top" secondItem="i6H-ft-agp" secondAttribute="bottom" constant="15" id="zx7-21-Fuk"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ViE-rf-Ltg" secondAttribute="trailing" id="3DY-Y6-6ln"/>
+                                    <constraint firstAttribute="height" constant="290" id="61E-lI-Lwr"/>
                                     <constraint firstItem="ocl-Df-jfQ" firstAttribute="leading" secondItem="tYT-oq-fNu" secondAttribute="leading" id="7Zp-m1-siK"/>
-                                    <constraint firstItem="ViE-rf-Ltg" firstAttribute="top" secondItem="ocl-Df-jfQ" secondAttribute="bottom" constant="10" id="NRN-XT-Hcw"/>
                                     <constraint firstAttribute="trailing" secondItem="ocl-Df-jfQ" secondAttribute="trailing" id="ZzO-4p-iup"/>
                                     <constraint firstAttribute="bottom" secondItem="ViE-rf-Ltg" secondAttribute="bottom" id="db3-9Z-Lsv"/>
                                     <constraint firstItem="ViE-rf-Ltg" firstAttribute="leading" secondItem="tYT-oq-fNu" secondAttribute="leading" id="eiN-AI-zEK"/>
@@ -454,7 +453,7 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vhk-F6-szM" userLabel="NextEvoView">
-                                <rect key="frame" x="0.0" y="338" width="320" height="30"/>
+                                <rect key="frame" x="0.0" y="378" width="320" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution: Venasaur LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs6-Pu-ozH">
                                         <rect key="frame" x="0.0" y="5" width="320" height="20"/>
@@ -476,7 +475,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Rfk-Sj-3uw" userLabel="TwoImagesStack">
-                                <rect key="frame" x="25" y="398" width="270" height="120"/>
+                                <rect key="frame" x="25" y="428" width="270" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-vB-DFh">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
@@ -493,12 +492,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Rfk-Sj-3uw" firstAttribute="centerX" secondItem="3bO-Li-OIX" secondAttribute="centerX" id="3Ef-zt-OKK"/>
-                            <constraint firstItem="vhk-F6-szM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tYT-oq-fNu" secondAttribute="bottom" constant="7" id="6HS-Gh-b6E"/>
                             <constraint firstItem="kae-P9-Vqy" firstAttribute="top" secondItem="3bO-Li-OIX" secondAttribute="top" id="Q19-QN-x4N"/>
                             <constraint firstItem="tYT-oq-fNu" firstAttribute="leading" secondItem="3bO-Li-OIX" secondAttribute="leadingMargin" id="W86-cb-PWv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tYT-oq-fNu" secondAttribute="trailing" id="WcR-Ea-ck0"/>
-                            <constraint firstItem="Rfk-Sj-3uw" firstAttribute="top" secondItem="vhk-F6-szM" secondAttribute="bottom" constant="30" id="X80-nP-qa9"/>
-                            <constraint firstItem="VhO-fX-d14" firstAttribute="top" secondItem="vhk-F6-szM" secondAttribute="bottom" constant="200" id="aZF-51-K8u"/>
+                            <constraint firstItem="Rfk-Sj-3uw" firstAttribute="top" secondItem="vhk-F6-szM" secondAttribute="bottom" constant="20" id="X80-nP-qa9"/>
+                            <constraint firstItem="VhO-fX-d14" firstAttribute="top" secondItem="vhk-F6-szM" secondAttribute="bottom" constant="160" id="aZF-51-K8u"/>
                             <constraint firstItem="tYT-oq-fNu" firstAttribute="top" secondItem="kae-P9-Vqy" secondAttribute="bottom" constant="8" id="bMl-kf-tFs"/>
                             <constraint firstAttribute="trailing" secondItem="kae-P9-Vqy" secondAttribute="trailing" id="s4O-VM-Hra"/>
                             <constraint firstItem="vhk-F6-szM" firstAttribute="leading" secondItem="3bO-Li-OIX" secondAttribute="leading" id="tsN-2H-0c8"/>

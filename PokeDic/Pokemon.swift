@@ -19,22 +19,18 @@ class Pokemon {
      private var _weight: String!
      private var _attack: String!
      private var _nextEvolutionTxt: String!
+     private var _evolutionLevel: String!
+     private var _evolutionName: String!
+     private var _evolutionID: String!
      private var _pokemonURL: String!
+    
     //Data Protection
     var name: String {
-        get {
             return _name
-        } set {
-            _name = newValue
-        }
     }
 
     var pokeID: Int {
-        get {
-            return _pokeID
-        } set {
-            _pokeID = newValue
-        }
+            return _pokeID        
     }
     
     var description: String {
@@ -91,11 +87,39 @@ class Pokemon {
         }
     }
     
-    var nextEvolutionText: String {
-        if _nextEvolutionTxt == nil {
-            _nextEvolutionTxt = ""
+    var evolutionLevel: String {
+        get {
+            if _evolutionLevel == nil {  _evolutionLevel = ""   }
+            return _evolutionLevel }
+        set {
+            _evolutionLevel = newValue
         }
-        return _nextEvolutionTxt
+    }
+    
+    var evolutionName: String {
+        get {
+            if _evolutionName == nil {  _evolutionName = ""   }
+            return _evolutionName }
+        set {
+            _evolutionName = newValue
+        }
+    }
+    var evolutionID: String {
+        get {
+            if _evolutionID == nil {  _evolutionID = ""   }
+            return _evolutionID }
+        set {
+            _evolutionID = newValue
+        }
+    }
+    
+    var nextEvolutionText: String {
+        get {
+        if _nextEvolutionTxt == nil {  _nextEvolutionTxt = ""   }
+            return _nextEvolutionTxt }
+        set {
+            _nextEvolutionTxt = newValue
+        }
     }
     
     var pokemonURL: String {

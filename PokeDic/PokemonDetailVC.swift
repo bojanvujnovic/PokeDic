@@ -30,8 +30,11 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.nameLabel.text = self.pokemon.name
+        self.nameLabel.text = self.pokemon.name.capitalized
         self.idLabel.text = "\(pokemon.pokeID)"
+        let image = pokemon.image
+        self.mainImage.image = image
+        self.currentEvoImage.image = image
         pokemon.downloadPokemonDetail {
             //Whatever we write here will only be called after network call is completed
             DispatchQueue.main.async { [unowned self] in
@@ -45,6 +48,9 @@ class PokemonDetailVC: UIViewController {
         self.heightLabel.text = pokemon.height
         self.attackLabel.text = pokemon.attack
         self.defenseLabel.text = pokemon.defense
+        self.typeLabel.text = pokemon.type
+        self.descriptionLabel.text = pokemon.description
+        self.evolutionLabel.text = pokemon.nextEvolutionText
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {

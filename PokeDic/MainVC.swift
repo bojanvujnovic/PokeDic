@@ -61,14 +61,11 @@ class MainVC: UIViewController, UICollectionViewDataSource, UICollectionViewDele
                     var pokemon: Pokemon!
                     var pokeVM: PokeVM!
                     if let name = dict["identifier"] , let id = dict["id"], let idInt = Int(id) {
-                        
                         pokemon = Pokemon(name: name, pokeID: idInt)                        
                         pokeVM = PokeVM(pokemon: pokemon)
-                        
                     }
                     return pokeVM
-                })
-                
+                })                
             } catch let error {
                 print(error.localizedDescription)
             }
